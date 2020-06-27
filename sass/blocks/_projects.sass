@@ -1,0 +1,73 @@
+.projects
+    padding-top: 100px
+    background: #F6F6F8
+    @media screen and ( max-width: 991px )
+        padding-top: 70px
+    @media screen and ( max-width: 767px )
+        padding-top: 50px
+    & a 
+        text-decoration: none
+        outline: none
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 100px
+        @media screen and ( max-width: 767px )
+            padding-bottom: 60px
+    &__title
+        margin-bottom: 50px
+    &__text
+        max-width: 730px
+        margin-bottom: 70px
+        @media screen and ( max-width: 767px )
+            margin-bottom: 50px
+    &-blocks
+        display: flex
+        margin: 0 -15px
+        margin-bottom: 50px
+        @media screen and ( max-width: 991px )
+            flex-wrap: wrap
+            justify-content: center
+        @media screen and ( max-width: 767px )
+            flex-direction: column
+            margin-bottom: 30px
+    &-block
+        position: relative
+        padding: 15px
+        cursor: pointer
+        &__title
+            margin-bottom: 10px
+            font-family: 'Montserrat Bold'
+            font-size: 20px
+        &__text
+            font-family: 'Montserrat Med'
+        &::before
+            content: ''
+            position: absolute
+            top: 15px
+            left: 15px
+            width: 89.5%
+            height: 89.5%
+            background-color: rgba(0, 0, 0, 0.5)
+            border-radius: 10px
+            opacity: 0
+            transition: 0.3s
+            @media screen and ( max-width: 991px )
+                opacity: 1
+        &:hover::before
+            opacity: 1
+        &__info
+            position: absolute
+            max-width: 223px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: #fff
+            text-align: center
+            opacity: 0
+            transition: 0.3s
+            @media screen and ( max-width: 991px )
+                opacity: 1
+        &:hover &__info
+            opacity: 1

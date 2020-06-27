@@ -1,0 +1,64 @@
+.news
+    padding: 100px 0
+    @media screen and ( max-width: 991px )
+        padding: 70px 0
+    @media screen and ( max-width: 767px )
+        padding: 50px 0
+    &__title
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        font-family: 'Montserrat Semibold'
+        text-align: center
+        margin-bottom: 20px
+    &__text
+        font-size: 16px
+        line-height: 25px
+        color: #999999
+        text-align: center
+        margin-bottom: 30px
+    &__label
+        font-size: 13px
+        line-height: 21px
+        color: #999999
+        display: block
+        text-align: center
+.form
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 35px
+    @media screen and ( max-width: 575px )
+        flex-direction: column
+    &__input
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
+        background-color: #fff
+        border-radius: 30px 0px 0px 30px
+        padding: 15px 30px
+        border: none
+        @media screen and ( max-width: 575px )
+            padding: 15px 20px
+            border-radius: 30px
+            margin-bottom: 10px
+        &::placeholder
+            color: #999999
+            font-size: 13px
+            line-height: 21px
+    &__button
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
+        background: #4985FF
+        border-radius: 0px 30px 30px 0px
+        padding: 15px 30px
+        border: none
+        color: #fff
+        transition: 0.3s
+        @media screen and ( max-width: 575px )
+            padding: 10px 20px
+            border-radius: 30px
+            font-size: 14px
+        &:focus
+            outline: none
+        @media screen and ( min-width: 767px )
+            &:hover
+                color: #4985FF
+                background-color: #fff

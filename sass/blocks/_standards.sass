@@ -1,0 +1,72 @@
+.standards
+    padding-top: 100px
+    padding-bottom: 70px
+    background: #F6F6F8
+    @media screen and ( max-width: 991px )
+        padding: 70px 0
+    @media screen and ( max-width: 767px )
+        padding: 50px 0
+    &-blocks
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 90px
+        border-bottom: 1px solid #E0E0E0
+        margin-bottom: 70px
+        @media screen and ( max-width: 991px )
+            padding-bottom: 50px
+            margin-bottom: 50px
+    &-block
+        &_right
+            & img
+                @media screen and ( max-width: 991px )
+                    display: none
+        &_left
+            @media screen and ( max-width: 991px )
+                text-align: center
+    &__link
+        @media screen and ( max-width: 991px )
+            &::after
+                position: absolute!important
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%) 
+    &__title
+        text-align: left!important
+        margin-bottom: 40px
+        @media screen and ( max-width: 767px )
+            text-align: center!important
+    &__text
+        text-align: left!important
+        max-width: 489px
+        margin-bottom: 30px
+        @media screen and ( max-width: 991px )
+            text-align: center!important
+            margin: 0 auto
+            margin-bottom: 30px
+    &-numbers
+        display: flex
+        justify-content: space-around
+        align-items: center
+        @media screen and ( max-width: 575px )
+            flex-wrap: wrap
+        &-block
+            @media screen and ( max-width: 575px )
+                width: 50%
+                text-align: center
+            &_top
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #000
+                font-size: 36px
+                line-height: 53px
+                & img
+                    margin-right: 20px
+            & span
+                font-size: 16px
+                line-height: 25px
+                color: #999999
+                text-align: center
+.count
+    width: 54px

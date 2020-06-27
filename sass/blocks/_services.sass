@@ -1,0 +1,101 @@
+.services
+    padding-top: 100px
+    @media screen and ( max-width: 767px )
+        padding-top: 70px
+    @media screen and ( max-width: 767px )
+        padding-top: 50px
+    & a 
+        text-decoration: none
+        outline: none
+    &__body
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-bottom: 100px
+        @media screen and ( max-width: 991px )
+            padding-bottom: 70px
+        @media screen and ( max-width: 767px )
+            padding-top: 50px
+    &__title
+        max-width: 739px
+        margin: 0 auto
+        margin-bottom: 50px
+    &__text
+        max-width: 730px
+        margin: 0 auto
+        margin-bottom: 140px
+        @media screen and ( max-width: 991px )
+            margin-bottom: 70px
+    &-blocks
+        display: flex
+        justify-content: space-between
+        margin-bottom: 55px
+        @media screen and ( max-width: 991px )
+            flex-direction: column
+            margin-bottom: 20px
+        @media screen and ( max-width: 767px )
+            margin-bottom: 0
+    &-block
+        display: flex
+        align-items: start
+        @media screen and ( max-width: 991px )
+            margin-bottom: 50px
+        &__img
+            position: relative
+            padding: 35px
+            border-radius: 50%
+            transform: translateY(-35%)
+            transition: 0.3s
+            @media screen and ( max-width: 991px )
+                transform: translateY(0)
+            @media screen and ( min-width: 767px )
+                &:hover
+                    background-color: #4985FF
+            & path
+                transition: 0.3s
+            @media screen and ( min-width: 767px )
+                &:hover path
+                    fill: #fff
+            &::before
+                transition: 0.3s
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                border-radius: 50%
+                border: 1px solid #E0E0E0
+            @media screen and ( min-width: 767px )
+                &:hover::before
+                    opacity: 0
+                &:hover::after
+                    width: 100%
+                    height: 100%
+                    transform: translate(0%, 0%)
+                    opacity: 0
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                transform: translate(13%, 12%)
+                width: 80%
+                height: 80%
+                border: 1px solid #4985FF
+                border-radius: 50%
+                transition: 0.3s
+        &__text
+            margin-left: 40px
+        &__title
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+            font-family: 'Montserrat Semibold'
+            margin-bottom: 12px
+        &__label
+            font-size: 14px
+            line-height: 22px
+            color: #999999
+            max-width: 220px
